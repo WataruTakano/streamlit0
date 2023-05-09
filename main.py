@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
+#from PIL import Image
 import time
 
 st.title("streamlit introduction")
@@ -44,11 +44,11 @@ df=pd.DataFrame(
 )
 st.map(df)
 
-st.write("DisplayImage")
+#st.write("DisplayImage")
 
-if st.checkbox("Show image") :
-	img = Image.open("sample.png")
-	st.image(img, caption="sample", use_column_width =True)
+#if st.checkbox("Show image") :
+#	img = Image.open("sample.png")
+#	st.image(img, caption="sample", use_column_width =True)
 
 option = st.selectbox(
 	"answer your favorite number",
